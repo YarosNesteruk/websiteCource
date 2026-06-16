@@ -1,3 +1,8 @@
+<!--
+Lesson 2
+-->
+
+
 <style> 
   .youtube-button{
     background-color: #c50606;
@@ -5,11 +10,20 @@
     text-align: center;
     border: none;
     border-radius: 7px;
-    height: 30px;
-    width: 100px;
+    padding: 8px 10px;
 
     cursor: pointer;
     margin-right: 5px;
+    transition: opacity 0.2s;
+    margin-top: 5px;
+    vertical-align: top;
+  }
+
+  .youtube-button:hover{
+    opacity: 0.8;
+  }
+  .youtube-button:active{
+    opacity: 0.6;
   }
 
   .join-button{
@@ -21,14 +35,23 @@
 
     text-align: center;
     border-radius: 2px;
-    height: 30px;
-    width: 50px;
+    padding: 7px 10px;
 
     font-size: 12px;
 
     cursor: pointer;
     margin-right: 5px;
-    
+    transition: background-color 0.2s, color 0.2s;
+    margin-top: 5px;
+    vertical-align: top;
+  }
+
+  .join-button:hover{
+    background-color: rgb(29, 110, 197);
+    color: rgb(255, 255, 255);
+  }
+  .join-button:active{
+    opacity: 0.8;
   }
 
   .tweet-button{
@@ -37,23 +60,198 @@
     border: none;
     color: rgb(255, 255, 255);
 
-    height: 30px;
-    width: 60px;
+    padding: 8px 10px;
 
     font-size: 12px;
     font-weight: bold;
     font-style: italic;
 
     cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    margin-top: 5px;
+    vertical-align: top;
+  }
+  .tweet-button:hover{
+    background-color: rgb(44, 159, 236);
+    box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  .tweet-button:active{
+    background-color: rgb(29, 155, 240);
+    box-shadow:  0px 0px 0px 0
+  }
+
+  .uber-button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+    border: none;
+    border-style: solid;
+    height: 30px;
+    width: 90px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  .amazon-button{
+    background-color: rgb(255, 216, 20);
+    color: rgb(0, 0, 0);
+
+    border-radius: 15px;
+    border: none;
+    height: 20px;
+    width: 140px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+
+  .github-button{
+    background-color: rgb(46, 164, 79);
+    color: rgb(255, 255, 255);
+
+    border-radius: 4px;
+    border: none;
+    height: 30px;
+    width: 60px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+  .boot-button{
+    background-color: rgb(121, 82, 125);
+    color: rgb(255, 255, 255);
+
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    width: 90px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  .strap-button{
+    background-color: rgb(255, 255, 255);
+    color: rgba(108, 117, 125);
+
+    border-width: 1px;
+    border-radius: 3px;
+    border-style: solid;
+    height: 30px;
+    width: 90px;
+    font-size: 10px;
+    cursor: pointer;
     
   }
+
+  .linked-button{
+    background-color: rgb(10, 102, 194);
+    color: rgb(255, 255, 255);
+
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    width: 200px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .in-button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 102, 194);
+
+    border-radius: 15px;
+    border-style: solid;
+    height: 30px;
+    width: 60px;
+
+    font-size: 12px;
+    border-width: 1px;
+    border-color: rgb(10, 102, 194);
+    cursor: pointer;
+  }
+
+  .back-link{
+    font-size: 12px;
+    color: rgb(0,113,133)
+  }
+
+  .name-para{
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .price-para{
+    font-size: 12px;
+    color: rgb(0,118,0);
+  }
+
+  .free-para{
+    font-size: 12px;
+  }
+
+  .add-button{
+    background-color: rgb(255, 216, 20);
+    color: rgb(0, 0, 0);
+
+    border-radius: 15px;
+    border: none;
+    height: 25px;
+    width: 90px;
+    font-size: 11px;
+
+    cursor: pointer;
+  }
+
+  .buy-button{
+    background-color: rgb(255, 113, 0);
+    color: rgb(16, 16, 16);
+
+    border-radius: 15px;
+    border: none;
+    height: 25px;
+    width: 90px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  
 </style>
 
 <button class="youtube-button">SUBSCRIBE</button>
 
 
-<button class="join-button">JOIN</button>
+<button class="join-button">JOIN my channel</button>
 
 <button class="tweet-button">Tweet</button>
 
 
+<!--
+Lesson 2 - homework
+-->
+
+<br></br>
+
+<!--2a-->
+<button class="uber-button">Request now</button>
+<!--2b-->
+<br></br>
+<button class="amazon-button">Add to Cart</button>
+<!--2c-->
+<br></br>
+<button class="github-button">Sign Up</button>
+<!--2d-->
+<br></br>
+<button class="boot-button">Get Started</button>
+<button class="strap-button">Download</button>
+<!--2e-->
+<br></br>
+<button class="linked-button">Apply on company website</button>
+<button class="in-button">Save</button>
+<!--2f-->
+<br></br>
+
+<a href="https://www.amazon.com/" target="_blank" class = "back-link">Back to Amazon</a>
+
+<p class="name-para">Nike Black Running Shoes</p>
+
+<p class="price-para">$39 - in stock.</p>
+<p class="free-para">Free delivery tomorrow.</p>
+
+<button class="add-button">Add to Cart</button>
+<button class="buy-button">Buy Now</button>
