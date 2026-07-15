@@ -15,7 +15,7 @@
 
   <body>
 
-    <div class="header">
+    <header class="header">
       <div class="left-section">
         <img class="menu" src="icons/hamburger-menu.svg" alt="menu">
         <img class="youtube-logo" src="icons/youtube-logo.svg" alt="youtube-logo">
@@ -38,7 +38,7 @@
 
 
       <div class="right-section">
-        
+
         <div class="upload-container">
           <img class="create-icon" src="icons/upload.svg"
            alt="create-icon">
@@ -58,9 +58,12 @@
         </div>
           <img class="profile-icon" src="channel-pics/my-channel.jpeg" alt="profile-icon">
       </div>
-    </div>
+    </header>
   
-    <div class="side-bar"> 
+<!-- put position absolute - inside position relative
+    to create tooltips for example
+    -->
+    <nav class="side-bar"> 
       <div class="side-bar-item">
 
         <div class="sidebar-container">
@@ -95,191 +98,187 @@
 
       </div>  
     
-    </div>
+    </nav>
 
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="thumbnail">
-          <div class="duration"> 14:20 </div>
-        </div>
+    <main>
+      <section class="video-grid">
 
-        <div class="video-info-grid">
-          <div class="channel-img">
-              <img class="profile-img" src="channel-pics/channel-1.jpeg" alt="profile-img">
+        <div class="video-preview">
+
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="thumbnail">
+            <div class="duration"> 14:20 </div>
           </div>
+          <div class="video-info-grid">
+            <div class="channel-img">
+                <img class="profile-img" src="channel-pics/channel-1.jpeg" alt="profile-img">
+            </div>
+            <div>
+              <p class="description-para">
+                Talking Tech Ai with Google CEO Sundar Pichai!
+              </p>
+              <p class="author-para">
+                  Marques Brownlee
+              </p>
+              <p class ="stats-para">
+                  3.4M views &middot; 6 month ago
+              </p>
 
-          <div>
-
-            <p class="description-para">
-              Talking Tech Ai with Google CEO Sundar Pichai!
-            </p>
-
-            <p class="author-para">
-                Marques Brownlee
-            </p>
-
-            <p class ="stats-para">
-                3.4M views &middot; 6 month ago
-            </p>
-
-          </div>
-
-        </div>
-
-      
-      </div>
-
-      <div class="video-preview">
-
-        <div class="thumbnail-row">
-            <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="thumbnail">
-            <div class="duration"> 8:22 </div>
-          </div>
-
-        <div class="video-info-grid">
-          <div class="channel-img">
-              <img class="profile-img" src="channel-pics/channel-2.jpeg" alt="profile-img" >
-          </div>
-
-          <div>
-            <p class="description-para">
-              Try NOT to Laugh Challenge #9
-            </p>
-
-            <p class="author-para">
-                Markiplier
-            </p>
-
-            <p class ="stats-para">
-                19M views &middot; 4 years ago
-            </p>
-          </div>
-
-        </div>
-      
-
-      </div>
-
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="thumbnail">
-          <div class="duration"> 9:13 </div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-img">
-              <img class="profile-img" src="channel-pics/channel-3.jpeg" alt="profile-img">
-          </div>
-          <div>
-            <p class="description-para">
-              Crazy Tik Toks Taken Moments Before DISASTER
-            </p>
-            <p class="author-para">
-                SSSniperWolf
-            </p>
-            <p class ="stats-para">
-                12M views &middot; 1 year ago
-            </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="thumbnail">
-          <div class="duration"> 22:09 </div>
-        </div>
+        <div class="video-preview">
 
-        <div class="video-info-grid">
-          <div class="channel-img">
-              <img class="profile-img" src="channel-pics/channel-4.jpeg" alt="profile-img">
+          <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="thumbnail">
+              <div class="duration"> 8:22 </div>
+            </div>
+
+          <div class="video-info-grid">
+            <div class="channel-img">
+                <img class="profile-img" src="channel-pics/channel-2.jpeg" alt="profile-img" >
+            </div>
+
+            <div>
+              <p class="description-para">
+                Try NOT to Laugh Challenge #9
+              </p>
+
+              <p class="author-para">
+                  Markiplier
+              </p>
+
+              <p class ="stats-para">
+                  19M views &middot; 4 years ago
+              </p>
+            </div>
+
           </div>
-
-          <div>
-
-            <p class="description-para">
-              The Simples Math Problem No One Can Solve - Collatz Conjecture
-            </p>
-
-            <p class="author-para">
-                Vertasium
-            </p>
-
-            <p class ="stats-para">
-                18M views &middot; 4 month ago
-            </p>
-
-          </div>
+        
 
         </div>
 
-      
-      </div>
-
-      <div class="video-preview">
-
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="thumbnail">
-          <div class="duration"> 11:17 </div>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="thumbnail">
+            <div class="duration"> 9:13 </div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-img">
+                <img class="profile-img" src="channel-pics/channel-3.jpeg" alt="profile-img">
+            </div>
+            <div>
+              <p class="description-para">
+                Crazy Tik Toks Taken Moments Before DISASTER
+              </p>
+              <p class="author-para">
+                  SSSniperWolf
+              </p>
+              <p class ="stats-para">
+                  12M views &middot; 1 year ago
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div class="video-info-grid">
-          <div class="channel-img">
-              <img class="profile-img" src="channel-pics/channel-5.jpeg" alt="profile-img" >
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="thumbnail">
+            <div class="duration"> 22:09 </div>
           </div>
 
-          <div>
-            <p class="description-para">
-              Kadane's Algorithm to Maximum Sum Subarray Problem
-            </p>
+          <div class="video-info-grid">
+            <div class="channel-img">
+                <img class="profile-img" src="channel-pics/channel-4.jpeg" alt="profile-img">
+            </div>
 
-            <p class="author-para">
-                CS Dojo
-            </p>
+            <div>
 
-            <p class ="stats-para">
-                519K views &middot; 5 years ago
-            </p>
-          </div>
+              <p class="description-para">
+                The Simples Math Problem No One Can Solve - Collatz Conjecture
+              </p>
 
-        </div>
-      
+              <p class="author-para">
+                  Vertasium
+              </p>
 
-      </div>
+              <p class ="stats-para">
+                  18M views &middot; 4 month ago
+              </p>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="thumbnail">
-          <div class="duration"> 19:59 </div>
-        </div>
-
-        <div class="video-info-grid">
-          <div class="channel-img">
-              <img class="profile-img" src="channel-pics/channel-6.jpeg" alt="profile-img">
-          </div>
-
-          <div>
-
-            <p class="description-para">
-              Anything You Can Fit In The Circle I'll Pay For
-            </p>
-
-            <p class="author-para">
-                MrBeast
-            </p>
-
-            <p class ="stats-para">
-                141M views &middot; 1 year ago
-            </p>
+            </div>
 
           </div>
 
+        
         </div>
 
-      
-      </div>
-    </div>
+        <div class="video-preview">
 
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="thumbnail">
+            <div class="duration"> 11:17 </div>
+          </div>
 
+          <div class="video-info-grid">
+            <div class="channel-img">
+                <img class="profile-img" src="channel-pics/channel-5.jpeg" alt="profile-img" >
+            </div>
+
+            <div>
+              <p class="description-para">
+                Kadane's Algorithm to Maximum Sum Subarray Problem
+              </p>
+
+              <p class="author-para">
+                  CS Dojo
+              </p>
+
+              <p class ="stats-para">
+                  519K views &middot; 5 years ago
+              </p>
+            </div>
+
+          </div>
+        
+
+        </div>
+
+        <div class="video-preview">
+
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="thumbnail">
+            <div class="duration"> 19:59 </div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-img">
+                <img class="profile-img" src="channel-pics/channel-6.jpeg" alt="profile-img">
+            </div>
+            <div>
+              <p class="description-para">
+                Anything You Can Fit In The Circle I'll Pay For
+              </p>
+
+              <p class="author-para">
+                  MrBeast
+              </p>
+
+              <p class ="stats-para">
+                  141M views &middot; 1 year ago
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+<!--semantic elements
+    like: main, header(in body), section
+    we use it to navigate search engines thought our page,
+    but it's same as div in general
+    -->
   </body>
 </html>   
